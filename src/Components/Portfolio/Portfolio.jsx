@@ -8,7 +8,7 @@ import Hoc from '../../img/hoc.png'
 import Musicpp from '../../img/musicapp.png'
 const Portfolio = () => {
     return (
-        <div className="portfolio">
+        <div className="portfolio" id='Portfolio'>
             <span>Recent Project</span>
             <span>Portfolio</span>
             <Swiper

@@ -15,7 +15,7 @@ const Contact = () => {
             });
     };
     return (
-        <div className='contact-form'>
+        <div className='contact-form' id='Contact'>
             <div className="c-left">
                 <span>Get in tocuh</span>
                 <span>Contact me</span>
