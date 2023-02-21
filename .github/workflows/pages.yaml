@@ -1,0 +1,50 @@
+# actions
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+# functions
+jobs:
+
+  # build jobs
+  build:
+    # name of the job
+    name: Build
+    # os
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Install node 16
+        uses: actions/steup-node
+        with:
+          node-vertios: 16.x
+      - name: Install NPM Dependences
+        run: npm i
+      - name: Build project
+        run: npm run build
+      - name: Upload artifact in corder to deploy
+        uses: actions/upload-artifact@v2
+        with: 
+          name: Production-files
+          path: ./dist
+  # deploy jobs
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v2
+        with:  
+          name: Production-files
+          path: ./dist
+      - name: Doploy to gh pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{secrets.GH_ACCESS_TOKEN}}
+          ublish_dir: ./dist
