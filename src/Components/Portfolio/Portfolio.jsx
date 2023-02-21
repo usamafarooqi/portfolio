@@ -1,5 +1,4 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import './Portfolio.css'
 import 'swiper/css'
 import gagnat_logo from '../../img/gagnat_logo.png'
