@@ -23,7 +23,7 @@ jobs:
         with:
           node-vertios: 16.x
       - name: Install NPM Dependences
-        run: npm i
+        run: npm install
       - name: Build project
         run: npm run build
       - name: Upload artifact in corder to deploy
