@@ -8,8 +8,8 @@ const PortfolioCard = (props) => {
                 <img src={props.project_image} alt="gagnat" />
             </div>
             <div className="detail">
-                <h3>project title</h3>
-                <p>description</p>
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
             </div>
         </div>
     )

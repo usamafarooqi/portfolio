@@ -13,10 +13,10 @@ const Portfolio = () => {
             <span>Portfolio</span>
 
             <div className='p-card'>
-                <PortfolioCard project_image={gagnat_logo} />
-                <PortfolioCard project_image={certainli_img} />
-                <PortfolioCard project_image={mood_img} />
-                <PortfolioCard project_image={kamaee} />
+                <PortfolioCard project_image={gagnat_logo} title={'cocircle title'} description={'description'} />
+                <PortfolioCard project_image={certainli_img} title={'certainli title'} description={'description'} />
+                <PortfolioCard project_image={mood_img} title={'mood title'} description={'description'} />
+                <PortfolioCard project_image={kamaee} title={'kamaee title'} description={'description'} />
             </div>
         </div>
     )
