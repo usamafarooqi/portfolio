@@ -14,8 +14,8 @@ const Portfolio = () => {
 
             <div className='p-card'>
                 <PortfolioCard project_image={gagnat_logo} title={'cocircle title'} description={'description'} />
-                <PortfolioCard project_image={certainli_img} title={'certainli title'} description={'description'} />
-                <PortfolioCard project_image={mood_img} title={'mood title'} description={'description'} />
+                <PortfolioCard project_image={certainli_img} title={'Component certificates made easy'} description={'Finding resources for functional assessment of components for your product is easy. But acquiring the component compliance documentation you need to get your product certified is a hassle. Certainli is here to change that'} />
+                <PortfolioCard project_image={mood_img} title={'Mood Social'} description={'Mood delivers fun activities and experiences in your area entirely based on your interests. Truly get to know your city by meeting friends and people nearby who enjoy the same activities as you! Discover what to do in your city, where to go, and what to visit.'} />
                 <PortfolioCard project_image={kamaee} title={'kamaee title'} description={'description'} />
             </div>
         </div>
