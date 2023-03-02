@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     height: 130vh;
+    padding-top: 5rem;
+
 }
 
 .portfolio span:nth-of-type(1) {
