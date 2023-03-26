@@ -1,13 +1,21 @@
 @font-face {
-    font-family: Gumela;
-    src: url('../src/fonts/Gumela\ Regular.otf');
+  font-family: Gumela;
+  src: url('../src/fonts/Gumela\ Regular.otf');
 
+}
+
+* {
+  font-family: 'Gumela';
+  font-weight: normal;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+@media screen and (max-width:480px) {
+  .App {
+    padding: 0.5rem 1rem;
   }
-  *{
-    font-family: 'Gumela';
-    font-weight: normal;
-    font-size: 20px;
-  }
-  body{
-    margin: 0;
-  }
+}

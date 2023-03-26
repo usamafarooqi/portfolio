@@ -2,7 +2,7 @@
 
     margin-top: 2rem;
     width: 25vw;
-    height: 62vh;
+    height: auto;
     border-radius: 5px;
     box-shadow: 0 0 10px #ccc;
     transition: transform .2s;
@@ -36,4 +36,11 @@
     font-size: 30px;
     color: green;
     font-weight: bold;
+}
+
+@media screen and (max-width:480px) {
+    .main-card {
+        width: auto;
+        height: auto;
+    }
 }
